@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PA Link Generator</title>
+<link rel="stylesheet" href="style/PA_Link_Generator_Styles.css">
+</head>
+
+<body>
+
+<h1>PA Link Generator</h1>
+
+<div class="instructions">
+    Enter the information below, add as many rows as needed,
+    then click Generate Table.
+</div>
+
+<div class="options">
+
+    <label>
+        <input type="checkbox" id="sameMaterial">
+        Use same Material Number for all rows
+    </label>
+
+    <label>
+        <input type="checkbox" id="sameSTP">
+        Use same STP for all rows
+    </label>
+<!--
+    <label>
+        <input type="checkbox" id="programSpecific">
+        PA is program specific
+    </label>
+
+    <label>
+        <input type="checkbox" id="levelSpecific">
+        PA is level specific
+    </label>
+-->
+</div>
+
+
+<h2>Proof Information</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Material</th>
+            <th>Sold to Party</th>
+            <th>Program</th>
+            <th>Level</th>
+            <th>Sketch</th>
+        </tr>
+    </thead>
+
+    <tbody id="inputBody"></tbody>
+</table>
+
+
+<button id="addRowButton" class="mainButton">
+    + Add Row
+</button>
+
+<button id="generateButton" class="mainButton">
+    Generate Table
+</button>
+
+<button id="clearButton" class="mainButton">
+    Clear All
+</button>
+
+
+<div id="message"></div>
+
+
+<div id="outputSection">
+
+    <h2>Table</h2>
+
+    <table id="Table">
+
+        <thead>
+            <tr>
+            <th>STP</th>
+            <th>Material</th>
+            <th>Sketch</th>
+            <th>Proof</th>
+            </tr>
+        </thead>
+
+        <tbody id="outputBody"></tbody>
+
+    </table>
+
+    <button id="copyButton" class="mainButton copyButton">
+        Copy Table
+    </button>
+
+</div>
+
+
+<script src="script/PA_Link_Generator.js"></script>
+
+</body>
+</html>
