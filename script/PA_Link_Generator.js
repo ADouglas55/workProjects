@@ -264,7 +264,7 @@ function generateTable() {
         message.style.color = "red";
 
         message.textContent =
-            "Complete Material Number, STP for at least one row.";
+            "Please enter a Material Number and STP for at least one row.";
 
     }
 
